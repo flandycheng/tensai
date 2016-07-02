@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> List <strong> Project </strong> : </h1>
+
+<div class="well">
+  <ul>
+  {% for each_project in project_list %}
+    <li>{{each_project}}</li>
+  {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

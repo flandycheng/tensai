@@ -61,6 +61,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+MIDDLEWARE_CLASSES = MIDDLEWARE
+
 ROOT_URLCONF = 'tensai.urls'
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
@@ -133,3 +135,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    ('css', '/static/css'),
+    ('js', '/static/js'),
+    ('fonts', '/static/fonts'),
+]
